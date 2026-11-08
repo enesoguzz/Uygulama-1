@@ -5,8 +5,9 @@ Bu repo, Türkiye'deki özel öğrenci yurtlarını listeleyen bir platformun ko
 ## Her görevden önce
 
 1. `docs/TANIM.md` dosyasını oku. Ürünün kapsamı oradadır.
-2. Görev TANIM.md'de olmayan bir özellik gerektiriyorsa, yapmadan önce sor.
-3. `docs/GELECEK-FIKIRLER.md` içindeki hiçbir şeyi kendiliğinden geliştirme.
+2. Arayüzle ilgili bir işse `docs/TASARIM.md` dosyasını ve `docs/tasarim/` altındaki ilgili ekranı oku. Renkleri, yazı tiplerini, boşlukları ve metinleri oradan al.
+3. Görev TANIM.md'de olmayan bir özellik gerektiriyorsa, yapmadan önce sor.
+4. `docs/GELECEK-FIKIRLER.md` içindeki hiçbir şeyi kendiliğinden geliştirme.
 
 ## Teknoloji
 
@@ -56,4 +57,5 @@ lib/                 İş mantığı ve veri erişimi (web'e bağımlı değil)
 messages/            Arayüz metinleri (tr.json)
 supabase/migrations/ Veritabanı migration dosyaları
 docs/                Tanım dokümanları
+docs/tasarim/        Onaylanmış ekran tasarımları (referans, çalıştırılmaz)
 ```

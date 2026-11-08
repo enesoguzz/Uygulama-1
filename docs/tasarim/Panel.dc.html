@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Yurtrota — Yurt sahibi paneli</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1D4ED8}a:hover{color:#1E40AF}
+</style>
+</helmet>
+<div style="min-height: 100vh; box-sizing: border-box; background: #F6F7F9; display: flex; flex-wrap: wrap; font-family: Inter, system-ui, sans-serif; color: #101828">
+
+<aside style="flex: 1 1 220px; box-sizing: border-box; background: #FFFFFF; border-right: 1px solid #E4E7EC; padding: 20px 14px; display: flex; flex-direction: column; gap: 20px">
+<div style="display: flex; align-items: center; gap: 10px; padding: 0 6px">
+<div style="width: 32px; height: 32px; border-radius: 9px; background: #1D4ED8; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4v-9z"></path><path d="M10 20v-5h4v5"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column">
+<span style="font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-weight: 800; font-size: 17px; letter-spacing: -0.02em">Yurtrota</span>
+<span style="font-size: 12px; color: #5B6474">Yurt paneli</span>
+</div>
+</div>
+<button type="button" style="height: 48px; border-radius: 10px; border: 1px solid #E4E7EC; background: #F9FAFB; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px; font: 600 14px Inter, sans-serif; color: #101828; cursor: pointer; text-align: left">
+<span>Çınar Kız Öğrenci Yurdu</span>
+<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5B6474" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+</button>
+<nav aria-label="Panel menüsü" style="display: flex; flex-direction: column; gap: 2px">
+<a href="#" aria-current="page" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; background: #EEF3FF; color: #1D4ED8; font-size: 14px; font-weight: 600; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V4M4 20h16"></path><path d="M8 16v-4M12 16V8M16 16v-6"></path></svg>Genel bakış</a>
+<a href="#" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; color: #344054; font-size: 14px; font-weight: 500; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4v-9z"></path></svg>Yurt profili</a>
+<a href="#" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; color: #344054; font-size: 14px; font-weight: 500; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V7"></path><path d="M3 14h18v4"></path><path d="M21 14v-2a3 3 0 0 0-3-3h-7v5"></path></svg>Oda tipleri</a>
+<a href="#" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; color: #344054; font-size: 14px; font-weight: 500; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"></rect><circle cx="12" cy="13" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg>Fotoğraflar</a>
+<a href="#" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; color: #344054; font-size: 14px; font-weight: 500; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13l3-8h10l3 8v6H4v-6z"></path><path d="M4 13h5l1 2h4l1-2h5"></path></svg><span style="flex: 1">Gelen talepler</span><span style="min-width: 22px; height: 22px; border-radius: 11px; background: #1D4ED8; color: #FFFFFF; font-size: 12px; font-weight: 600; display: flex; align-items: center; justify-content: center">3</span></a>
+<a href="#" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; color: #344054; font-size: 14px; font-weight: 500; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"></path></svg>Belgeler</a>
+<a href="#" style="height: 42px; border-radius: 8px; padding: 0 10px; display: flex; align-items: center; gap: 10px; color: #344054; font-size: 14px; font-weight: 500; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"></path><circle cx="16" cy="6" r="2"></circle><circle cx="10" cy="12" r="2"></circle><circle cx="18" cy="18" r="2"></circle></svg>Ayarlar</a>
+</nav>
+</aside>
+
+<main style="flex: 999 1 560px; min-width: 0; box-sizing: border-box; padding: 32px 32px 40px">
+<div style="max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px">
+
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h1 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 28px; font-weight: 800; letter-spacing: -0.01em">Genel bakış</h1>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<span style="height: 26px; padding: 0 10px; border-radius: 13px; background: #E3F3E8; color: #0B6B33; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 4px; background: #16A34A"></span>Yayında</span>
+<span style="height: 26px; padding: 0 10px; border-radius: 13px; background: #EEF3FF; color: #1D4ED8; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 5px"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>Ruhsatlı</span>
+</div>
+</div>
+<a href="YurtDetay.dc.html" style="height: 44px; padding: 0 16px; border-radius: 10px; border: 1px solid #D0D5DD; background: #FFFFFF; color: #344054; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px; text-decoration: none">Sitede görüntüle<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 14v5H5V6h5"></path></svg></a>
+</div>
+
+<sc-if value="{{showAlert}}" hint-placeholder-val="{{true}}">
+<div role="status" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; background: #FFF6ED; border: 1px solid #F9DBAF; border-radius: 12px; padding: 14px 16px">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B54708" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 3l9 16H3l9-16z"></path><path d="M12 10v4M12 17h.01"></path></svg>
+<p style="flex: 1 1 320px; margin: 0; font-size: 14px; line-height: 1.45; color: #7A2E0E"><strong>4 kişilik oda</strong> bilgisi 12 gün önce güncellendi. 2 gün içinde güncellemezsen sitede "Bilgi güncel değil" olarak görünecek.</p>
+<button type="button" onClick="{{refreshQuad}}" style="height: 40px; padding: 0 14px; border-radius: 10px; border: 0; background: #101828; color: #FFFFFF; font: 600 14px Inter, sans-serif; cursor: pointer">Hâlâ dolu, onayla</button>
+</div>
+</sc-if>
+
+<section aria-label="Son 30 gün" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px">
+<div style="background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 18px">
+<p style="margin: 0; font-size: 13px; color: #5B6474">Profil görüntülenme</p>
+<p style="margin: 8px 0 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 28px; font-weight: 800">1.284</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #0B6B33; font-weight: 600">Geçen aya göre +%18</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 18px">
+<p style="margin: 0; font-size: 13px; color: #5B6474">WhatsApp tıklama</p>
+<p style="margin: 8px 0 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 28px; font-weight: 800">96</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #5B6474">Son 30 gün</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 18px">
+<p style="margin: 0; font-size: 13px; color: #5B6474">Telefon tıklama</p>
+<p style="margin: 8px 0 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 28px; font-weight: 800">41</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #5B6474">Son 30 gün</p>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 18px">
+<p style="margin: 0; font-size: 13px; color: #5B6474">Favoriye eklenme</p>
+<p style="margin: 8px 0 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 28px; font-weight: 800">213</p>
+<p style="margin: 6px 0 0; font-size: 12px; color: #5B6474">Son 30 gün</p>
+</div>
+</section>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+
+<section style="flex: 2 1 480px; min-width: 0; background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 20px 20px 8px">
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 18px; font-weight: 700">Boş yer durumu</h2>
+<p style="margin: 6px 0 8px; font-size: 13px; line-height: 1.45; color: #5B6474">Durum değişince tek dokunuşla güncelle. 14 gün güncellenmeyen bilgi sitede "güncel değil" olarak görünür.</p>
+<sc-for list="{{rooms}}" as="room" hint-placeholder-count="3">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding: 14px 0; border-top: 1px solid #EAECF0">
+<div style="flex: 1 1 150px; min-width: 0">
+<p style="margin: 0; font-size: 15px; font-weight: 600">{{room.name}}</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #5B6474">{{room.price}}</p>
+</div>
+<div role="group" aria-label="{{room.name}} boş yer durumu" style="display: flex; gap: 6px">
+<sc-for list="{{room.options}}" as="opt" hint-placeholder-count="3">
+<sc-if value="{{opt.selAvailable}}" hint-placeholder-val="{{false}}">
+<button type="button" aria-pressed="true" onClick="{{opt.pick}}" style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #0B6B33; background: #E3F3E8; color: #0B6B33; font: 600 13px Inter, sans-serif; cursor: pointer">{{opt.label}}</button>
+</sc-if>
+<sc-if value="{{opt.selLimited}}" hint-placeholder-val="{{false}}">
+<button type="button" aria-pressed="true" onClick="{{opt.pick}}" style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #9A4405; background: #FCEEDD; color: #9A4405; font: 600 13px Inter, sans-serif; cursor: pointer">{{opt.label}}</button>
+</sc-if>
+<sc-if value="{{opt.selFull}}" hint-placeholder-val="{{false}}">
+<button type="button" aria-pressed="true" onClick="{{opt.pick}}" style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #475467; background: #ECEEF2; color: #344054; font: 600 13px Inter, sans-serif; cursor: pointer">{{opt.label}}</button>
+</sc-if>
+<sc-if value="{{opt.notSelected}}" hint-placeholder-val="{{true}}">
+<button type="button" aria-pressed="false" onClick="{{opt.pick}}" style="height: 36px; padding: 0 12px; border-radius: 18px; border: 1px solid #D0D5DD; background: #FFFFFF; color: #475467; font: 500 13px Inter, sans-serif; cursor: pointer">{{opt.label}}</button>
+</sc-if>
+</sc-for>
+</div>
+<sc-if value="{{room.stale}}" hint-placeholder-val="{{false}}">
+<span style="flex: 1 1 110px; text-align: right; font-size: 12px; font-weight: 600; color: #B54708">{{room.updated}}</span>
+</sc-if>
+<sc-if value="{{room.fresh}}" hint-placeholder-val="{{true}}">
+<span style="flex: 1 1 110px; text-align: right; font-size: 12px; color: #5B6474">{{room.updated}}</span>
+</sc-if>
+</div>
+</sc-for>
+</section>
+
+<section style="flex: 1 1 280px; min-width: 0; background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 20px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 12px">
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 18px; font-weight: 700">Son talepler</h2>
+<a href="#" style="font-size: 13px; font-weight: 600; text-decoration: none">Tümü</a>
+</div>
+<div style="display: flex; flex-direction: column; margin-top: 8px">
+<div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #EAECF0">
+<div aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 18px; background: #EEF3FF; color: #1D4ED8; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">ZK</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+<div style="display: flex; justify-content: space-between; gap: 8px"><span style="font-size: 14px; font-weight: 600">Zeynep K.</span><span style="font-size: 12px; color: #5B6474">1 saat önce</span></div>
+<span style="align-self: flex-start; font-size: 11px; font-weight: 600; color: #1D4ED8; background: #EEF3FF; border-radius: 6px; padding: 2px 6px">Doğrulanmış öğrenci · YTÜ</span>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475467">2 kişilik oda için Eylül başında yer olur mu?</p>
+</div>
+</div>
+<div style="display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #EAECF0">
+<div aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 18px; background: #EEF3FF; color: #1D4ED8; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">EA</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+<div style="display: flex; justify-content: space-between; gap: 8px"><span style="font-size: 14px; font-weight: 600">Elif A.</span><span style="font-size: 12px; color: #5B6474">Dün</span></div>
+<span style="align-self: flex-start; font-size: 11px; font-weight: 600; color: #1D4ED8; background: #EEF3FF; border-radius: 6px; padding: 2px 6px">Doğrulanmış öğrenci · İTÜ</span>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475467">Tek kişilik odaların fiyatına akşam yemeği dahil mi?</p>
+</div>
+</div>
+<div style="display: flex; gap: 12px; padding: 14px 0">
+<div aria-hidden="true" style="flex: none; width: 36px; height: 36px; border-radius: 18px; background: #EEF3FF; color: #1D4ED8; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">MS</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px">
+<div style="display: flex; justify-content: space-between; gap: 8px"><span style="font-size: 14px; font-weight: 600">Melis S.</span><span style="font-size: 12px; color: #5B6474">2 gün önce</span></div>
+<span style="align-self: flex-start; font-size: 11px; font-weight: 600; color: #1D4ED8; background: #EEF3FF; border-radius: 6px; padding: 2px 6px">Doğrulanmış öğrenci · Yeni kazanan</span>
+<p style="margin: 2px 0 0; font-size: 13px; color: #475467">Ailemle hafta sonu yurdu görmeye gelebilir miyiz?</p>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<section style="background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 14px; padding: 20px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px">
+<h2 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 18px; font-weight: 700">Profilini tamamla</h2>
+<span style="font-size: 14px; font-weight: 600; color: #344054">%80 tamamlandı</span>
+</div>
+<div role="progressbar" aria-label="Profil doluluğu" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="height: 8px; border-radius: 4px; background: #EAECF0; overflow: hidden"><div style="width: 80%; height: 8px; background: #1D4ED8"></div></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 24px">
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #344054"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6B33" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Yurt fotoğrafları (16)</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #344054"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6B33" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Oda tipleri ve fiyatlar (3)</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #344054"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6B33" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Kurallar ve giriş saatleri</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #344054"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B6B33" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg>Konum ve yakın üniversiteler</div>
+<div style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #101828; font-weight: 600"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#98A2B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle></svg>4 kişilik odaya fotoğraf ekle<a href="#" style="margin-left: auto; font-size: 13px; text-decoration: none">Ekle</a></div>
+</div>
+</section>
+
+</div>
+</main>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1080}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = {
+      av: { double: 'available', single: 'limited', quad: 'full' },
+      upd: { double: '2 gün önce güncellendi', single: '5 gün önce güncellendi', quad: '12 gün önce güncellendi' },
+      stale: { double: false, single: false, quad: true }
+    };
+  }
+  setRoom(id, status) {
+    var av = Object.assign({}, this.state.av);
+    var upd = Object.assign({}, this.state.upd);
+    var stale = Object.assign({}, this.state.stale);
+    av[id] = status;
+    upd[id] = 'Az önce güncellendi';
+    stale[id] = false;
+    this.setState({ av: av, upd: upd, stale: stale });
+  }
+  renderVals() {
+    var self = this;
+    var rooms = [
+      { id: 'double', name: '2 kişilik oda', price: '₺27.500 / ay' },
+      { id: 'single', name: 'Tek kişilik oda', price: '₺38.000 / ay' },
+      { id: 'quad', name: '4 kişilik oda', price: '₺21.000 / ay' }
+    ];
+    var kinds = [
+      { id: 'available', label: 'Boş yer var' },
+      { id: 'limited', label: 'Sınırlı' },
+      { id: 'full', label: 'Dolu' }
+    ];
+    return {
+      showAlert: !!self.state.stale.quad,
+      refreshQuad: function () { self.setRoom('quad', self.state.av.quad); },
+      rooms: rooms.map(function (r) {
+        var cur = self.state.av[r.id];
+        var stale = !!self.state.stale[r.id];
+        return {
+          name: r.name,
+          price: r.price,
+          updated: self.state.upd[r.id],
+          stale: stale,
+          fresh: !stale,
+          options: kinds.map(function (k) {
+            var sel = cur === k.id;
+            return {
+              label: k.label,
+              selAvailable: sel && k.id === 'available',
+              selLimited: sel && k.id === 'limited',
+              selFull: sel && k.id === 'full',
+              notSelected: !sel,
+              pick: function () { self.setRoom(r.id, k.id); }
+            };
+          })
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

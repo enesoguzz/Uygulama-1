@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Yurtrota — Ana sayfa</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1D4ED8}a:hover{color:#1E40AF}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6F7F9; display: flex; flex-direction: column; font-family: Inter, system-ui, sans-serif; color: #101828">
+
+<header style="padding: 18px 20px 0; display: flex; justify-content: space-between; align-items: center">
+<div style="display: flex; align-items: center; gap: 10px">
+<div style="width: 34px; height: 34px; border-radius: 10px; background: #1D4ED8; color: #FFFFFF; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7v9H4v-9z"></path><path d="M10 20v-5h4v5"></path></svg>
+</div>
+<span style="font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.02em">Yurtrota</span>
+</div>
+<a href="#" aria-label="Hesabım" style="width: 44px; height: 44px; border-radius: 22px; background: #FFFFFF; border: 1px solid #E4E7EC; display: flex; align-items: center; justify-content: center; color: #344054">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+</a>
+</header>
+
+<main style="flex: 1; padding: 24px 20px 0; display: flex; flex-direction: column; gap: 20px; overflow: hidden">
+
+<div>
+<p style="margin: 0 0 8px; font-size: 13px; font-weight: 600; color: #1D4ED8">İstanbul Avrupa Yakası</p>
+<h1 style="margin: 0; font-family: 'Plus Jakarta Sans', Inter, sans-serif; font-size: 30px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em">Yurdu, odasına kadar gör.</h1>
+<p style="margin: 10px 0 0; font-size: 15px; line-height: 1.5; color: #475467">Fotoğraflar, fiyatlar ve boş yer durumu tek yerde. Yurda gitmeden karar ver.</p>
+</div>
+
+<form style="margin: 0; background: #FFFFFF; border: 1px solid #E4E7EC; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<div role="group" aria-label="Yurt türü" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; background: #F2F4F7; border-radius: 12px; padding: 4px">
+<sc-for list="{{genders}}" as="g" hint-placeholder-count="2">
+<sc-if value="{{g.selected}}" hint-placeholder-val="{{false}}">
+<button type="button" aria-pressed="true" onClick="{{g.pick}}" style="height: 40px; border: 0; border-radius: 9px; background: #FFFFFF; color: #101828; font: 600 14px Inter, sans-serif; box-shadow: 0 1px 2px rgba(16,24,40,0.12); cursor: pointer">{{g.label}}</button>
+</sc-if>
+<sc-if value="{{g.notSelected}}" hint-placeholder-val="{{true}}">
+<button type="button" aria-pressed="false" onClick="{{g.pick}}" style="height: 40px; border: 0; border-radius: 9px; background: transparent; color: #475467; font: 500 14px Inter, sans-serif; cursor: pointer">{{g.label}}</button>
+</sc-if>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="q" style="font-size: 13px; font-weight: 600; color: #344054">Nerede arıyorsun?</label>
+<div style="height: 50px; border: 1px solid #D0D5DD; border-radius: 12px; display: flex; align-items: center; gap: 10px; padding: 0 14px; color: #5B6474">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+<input id="q" type="search" placeholder="İlçe, semt ya da üniversite" style="flex: 1; min-width: 0; border: 0; outline: none; font: 400 15px Inter, sans-serif; color: #101828; background: transparent">
+</div>
+</div>
+<a href="Liste.dc.html" style="height: 50px; border-radius: 12px; background: #1D4ED8; color: #FFFFFF; font-weight: 600; font-size: 15px; display: flex; align-items: center; justify-content: center; text-decoration: none">Yurtları göster</a>
+</form>
+
+<section style="display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 15px; font-weight: 600; color: #101828">Popüler bölgeler</h2>
+<div style="display: flex; gap: 8px; overflow: hidden">
+<a href="Liste.dc.html" style="flex: none; height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E4E7EC; color: #344054; font-size: 14px; font-weight: 500; display: flex; align-items: center; text-decoration: none">Beşiktaş</a>
+<a href="Liste.dc.html" style="flex: none; height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E4E7EC; color: #344054; font-size: 14px; font-weight: 500; display: flex; align-items: center; text-decoration: none">Şişli</a>
+<a href="Liste.dc.html" style="flex: none; height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E4E7EC; color: #344054; font-size: 14px; font-weight: 500; display: flex; align-items: center; text-decoration: none">Fatih</a>
+<a href="Liste.dc.html" style="flex: none; height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E4E7EC; color: #344054; font-size: 14px; font-weight: 500; display: flex; align-items: center; text-decoration: none">Sarıyer</a>
+<a href="Liste.dc.html" style="flex: none; height: 36px; padding: 0 14px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E4E7EC; color: #344054; font-size: 14px; font-weight: 500; display: flex; align-items: center; text-decoration: none">Avcılar</a>
+</div>
+</section>
+
+<section style="display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<div style="flex: none; width: 36px; height: 36px; border-radius: 10px; background: #EEF3FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.7-7 9-4-1.3-7-4.5-7-9V6l7-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+</div>
+<div>
+<p style="margin: 0; font-size: 14px; font-weight: 600">Sadece ruhsatlı yurtlar</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #5B6474">Her yurdun izin belgeleri kontrol edilir.</p>
+</div>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<div style="flex: none; width: 36px; height: 36px; border-radius: 10px; background: #EEF3FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18V7"></path><path d="M3 14h18v4"></path><path d="M21 14v-2a3 3 0 0 0-3-3h-7v5"></path><circle cx="7" cy="11" r="1.6"></circle></svg>
+</div>
+<div>
+<p style="margin: 0; font-size: 14px; font-weight: 600">Oda oda fotoğraflar</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #5B6474">Yatağı, dolabı, banyoyu önceden gör.</p>
+</div>
+</div>
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<div style="flex: none; width: 36px; height: 36px; border-radius: 10px; background: #EEF3FF; color: #1D4ED8; display: flex; align-items: center; justify-content: center">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+</div>
+<div>
+<p style="margin: 0; font-size: 14px; font-weight: 600">Güncel boş yer bilgisi</p>
+<p style="margin: 2px 0 0; font-size: 13px; color: #5B6474">Her bilginin yanında güncellenme tarihi var.</p>
+</div>
+</div>
+</section>
+
+</main>
+
+<nav aria-label="Ana menü" style="height: 68px; flex: none; background: #FFFFFF; border-top: 1px solid #E4E7EC; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr))">
+<a href="#" aria-current="page" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #1D4ED8; font-size: 12px; font-weight: 600; text-decoration: none">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+Keşfet</a>
+<a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #5B6474; font-size: 12px; font-weight: 500; text-decoration: none">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4l-6 2v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14M15 6v14"></path></svg>
+Harita</a>
+<a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #5B6474; font-size: 12px; font-weight: 500; text-decoration: none">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+Favoriler</a>
+<a href="#" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: #5B6474; font-size: 12px; font-weight: 500; text-decoration: none">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+Hesabım</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { gender: 'female' };
+  }
+  renderVals() {
+    var self = this;
+    var opts = [
+      { id: 'female', label: 'Kız yurdu' },
+      { id: 'male', label: 'Erkek yurdu' }
+    ];
+    return {
+      genders: opts.map(function (o) {
+        var sel = self.state.gender === o.id;
+        return {
+          label: o.label,
+          selected: sel,
+          notSelected: !sel,
+          pick: function () { self.setState({ gender: o.id }); }
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>
