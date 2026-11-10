@@ -1,0 +1,33 @@
+{
+  "brand": "Yurtrota",
+  "meta": {
+    "title": "Yurtrota — Yurdu, odasına kadar gör",
+    "description": "İstanbul Avrupa Yakası'ndaki özel öğrenci yurtlarını fotoğrafları, fiyatları ve boş yer durumuyla incele."
+  },
+  "home": {
+    "region": "İstanbul Avrupa Yakası",
+    "title": "Yurdu, odasına kadar gör.",
+    "subtitle": "Fotoğraflar, fiyatlar ve boş yer durumu tek yerde. Yurda gitmeden karar ver.",
+    "account": "Hesabım",
+    "dormType": "Yurt türü",
+    "female": "Kız yurdu",
+    "male": "Erkek yurdu",
+    "searchLabel": "Nerede arıyorsun?",
+    "searchPlaceholder": "İlçe, semt ya da üniversite",
+    "submit": "Yurtları göster",
+    "popularRegions": "Popüler bölgeler",
+    "comingSoon": "Yurt listesi çok yakında burada olacak.",
+    "features": {
+      "licensed": { "title": "Sadece ruhsatlı yurtlar", "text": "Her yurdun izin belgeleri kontrol edilir." },
+      "photos": { "title": "Oda oda fotoğraflar", "text": "Yatağı, dolabı, banyoyu önceden gör." },
+      "fresh": { "title": "Güncel boş yer bilgisi", "text": "Her bilginin yanında güncellenme tarihi var." }
+    }
+  },
+  "nav": {
+    "label": "Ana menü",
+    "explore": "Keşfet",
+    "map": "Harita",
+    "favorites": "Favoriler",
+    "account": "Hesabım"
+  }
+}

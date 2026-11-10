@@ -38,14 +38,13 @@ Bu repo, Türkiye'deki özel öğrenci yurtlarını listeleyen bir platformun ko
 
 ## Komutlar
 
-Proje kurulduğunda buraya eklenecek:
-
 ```
-npm run dev
-npm run build
-npm run lint
-npm run typecheck
-npm run test
+npm install        # ilk kurulum
+npm run dev        # geliştirme sunucusu (localhost:3000)
+npm run build      # üretim derlemesi
+npm run lint       # ESLint
+npm run typecheck  # TypeScript denetimi
+npm run test       # Vitest birim testleri
 ```
 
 ## Klasör yapısı (planlanan)
