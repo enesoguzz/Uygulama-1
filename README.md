@@ -18,4 +18,5 @@ Türkiye'deki özel öğrenci yurtlarını öğrencilerin ve velilerin yurda git
 - [x] Uygulama fikri seçildi
 - [x] Tanım dokümanı ve CLAUDE.md yazıldı
 - [x] Örnek ekranlar onaylandı ve tasarım rehberi yazıldı
-- [ ] Geliştirme başlayacak (Faz 0)
+- [x] Faz 0, adım 1: Next.js projesi kuruldu, ana sayfa yayında
+- [ ] Faz 0 devamı: yurt listesi, detay sayfaları, Supabase bağlantısı
